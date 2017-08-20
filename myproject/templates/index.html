@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!-- <div style="color:red; font-size:2em;">hello universe, {{ name }}</div>
+<div style="color:red;">hello universe, David</div>
+<div style="color:blue;">hello universe, Judy</div> -->
+<!-- <div class="colorful-text">hello universe, {{ name }}</div>
+<div class="colorful-text">hello universe, David</div>
+<div class="colorful-text">hello universe, Judy</div> -->
+
+<div class="colorful-text">
+ <!-- <div >hello universe, {{ name }}</div> -->
+ <div>hello universe, David</div>
+ <div>hello universe, Judy</div>
+ {% for article in article_list%}
+    <div>{{article.title}}<div>
+ {% endfor %}
+</div>
+{% endblock %}
