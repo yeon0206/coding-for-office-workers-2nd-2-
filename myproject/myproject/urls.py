@@ -18,6 +18,6 @@ from django.contrib import admin #admin은 예외로 include를 안써줘도 됨
 
 
 urlpatterns = [
-    url(r'^', include('blog.urls')),
+    url(r'^blog', include('blog.urls')), #blog'를 없애주면 첫페이지로 할 수 있음
     url(r'^admin/', admin.site.urls),
 ]
